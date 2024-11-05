@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agustín Lara</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(agusd.jpeg);
+            background-size: cover;
+            font-size: 20px;
+            padding: 30px;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            color: #ffffff;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            color: #ffffff;
+            text-align: center;
+        }
+        .bio {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 25px auto;
+            max-width: 800px;
+            color: #ffffff;
+        }
+        .audio-buttons button {
+            background-color: #bfa100;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .audio-buttons button:hover {
+            background-color: #d4af37;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Agustín Lara</h1>
+    </header>
+    <section>
+        <h2>Biografía</h2>
+        <div class="bio">
+            <p>Agustín Lara, conocido como el "Flaco de Oro", fue uno de los compositores y músicos más importantes de 
+            México y América Latina. Nació el 30 de octubre de 1897 en la Ciudad de México, aunque algunas fuentes indican que 
+            pudo haber nacido en Tlacotalpan, Veracruz. Su vida estuvo marcada tanto por su talento musical como por su estilo 
+            de vida bohemio y su personalidad apasionada.</p>
+            <!-- Texto adicional de la biografía omitido para abreviar -->
+        </div>
+    </section>
+
+    <section>
+        <h3>Películas más famosas</h3>
+        <div class="bio">
+            <p>"La vida de Agustín Lara" (1959)</p>
+            <p>"Flor de luna" (1943)</p>
+            <p>"El cielo y tú" (1958)</p>
+            <p>"La liga de las canciones" (1941)</p>
+            <p>"Canciones inolvidables de Agustín Lara" (1956)</p>
+        </div>
+    </section>
+
+    <section>
+        <h4>Canciones</h4>
+        <div class="bio">
+            <p>Amor de mis amores</p>
+            <audio id="audio1">
+                <source src="Agustin Lara - Amor de mis amores(M4A_128K).m4a" type="audio/mpeg">
+            </audio>
+            <div class="audio-buttons">
+                <button onclick="document.getElementById('audio1').play()">Play</button>
+                <button onclick="document.getElementById('audio1').pause()">Pause</button>
+                <button onclick="document.getElementById('audio1').volume += 0.1">Volumen +</button>
+                <button onclick="document.getElementById('audio1').volume -= 0.1">Volumen -</button>
+            </div>
+
+            <p>María Bonita</p>
+            <audio id="audio2">
+                <source src="María Bonita(M4A_128K).m4a" type="audio/mpeg">
+            </audio>
+            <div class="audio-buttons">
+                <button onclick="document.getElementById('audio2').play()">Play</button>
+                <button onclick="document.getElementById('audio2').pause()">Pause</button>
+                <button onclick="document.getElementById('audio2').volume += 0.1">Volumen +</button>
+                <button onclick="document.getElementById('audio2').volume -= 0.1">Volumen -</button>
+            </div>
+
+            <p>Farolito</p>
+            <audio id="audio3">
+                <source src="Agustin Lara Farolito(M4A_128K).m4a" type="audio/mpeg">
+            </audio>
+            <div class="audio-buttons">
+                <button onclick="document.getElementById('audio3').play()">Play</button>
+                <button onclick="document.getElementById('audio3').pause()">Pause</button>
+                <button onclick="document.getElementById('audio3').volume += 0.1">Volumen +</button>
+                <button onclick="document.getElementById('audio3').volume -= 0.1">Volumen -</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 Música en la Era Dorada de México - Bachillerato Tecnológico en Programación.
+    </footer>
+</body>
+</html>
+
